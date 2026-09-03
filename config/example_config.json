@@ -1,0 +1,24 @@
+{
+  "target": {
+    "host": "127.0.0.1",
+    "port": 80,
+    "transport": "http",
+    "auth_endpoint": "/api/auth/login",
+    "timeout_seconds": 3
+  },
+  "auth": {
+    "username": "operator",
+    "password": "change-me",
+    "credential_wordlist": "credentials_demo.txt",
+    "max_attempts": 3,
+    "delay_between_attempts_seconds": 1.0,
+    "stop_on_first_success": true
+  },
+  "safety": {
+    "authorized_testing_confirmation": "I_AM_AUTHORIZED"
+  },
+  "report": {
+    "output_dir": "results",
+    "output_prefix": "fcb-basic-auth"
+  }
+}
